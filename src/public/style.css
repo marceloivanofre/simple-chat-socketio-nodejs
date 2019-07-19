@@ -1,0 +1,211 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+
+html, body {
+    overflow: auto;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background: #000916;
+    padding: 15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+::selection {
+    background: none;
+}
+
+.d-flex-end {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.d-flex-start {
+    display: flex;
+}
+
+.container {
+    min-height: 100%;
+    width: 100%;
+    min-width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#login {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login input {
+    border: none;
+    height: 50px;
+    padding: 15px;
+}
+
+#login input::selection {
+    background: #000916;
+    color: #fff;
+}
+
+#login button {
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    background-color: #00172D;
+    background-image: url('./img/1x/baseline_input_white_18dp.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#chat {
+    display: none;
+    width: 70%;
+    padding: 10px 5px;
+    border-radius: 3px;
+    background: #00172D;
+}
+
+#chat .menu {
+    height: 20px;
+    background: #00172D;
+    color: #fff;
+}
+
+#chat input {
+    width: 100%;
+    border: none;
+    background: #00172D;
+    color: #fff;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 14px;
+}
+
+#chat button {
+    width: 40px;
+    background-image: url('./img/1x/baseline_send_white_18dp.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #00172D;
+    border: none;
+}
+
+.messages {
+    overflow: auto;
+    width: 100%;
+    height: 400px;
+    margin: 20px 0 20px 0;
+    background: #000916;
+    padding: 20px;
+}
+
+.messages > li {
+    display: flex;
+    margin-bottom: 5px;
+    width: 100%;
+    color: #fff;
+}
+
+.messages .send-msg {
+    justify-content: flex-end;
+}
+
+.messages .send-msg ul {
+    border-radius: 3px 0 0 3px;
+    max-width: 80%;
+    padding: 15px 15px 5px 15px;
+    background-color: #00b5b8;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.messages .send-msg .time {
+    font-size: 12px;
+    padding-top: 10px;    
+    color: cyan;
+    width: 100%;
+    text-align: end;
+}
+
+.messages .received-msg {
+    justify-content: flex-start;
+}
+
+.messages .received-msg ul {
+    background-color: #192841;
+    max-width: 80%;
+    padding: 15px 15px 5px 15px;
+    border-radius: 0 3px 3px 0;
+}
+
+.messages .received-msg .time{
+    font-size: 12px;
+    padding-top: 5px;
+    color: darkcyan;
+    display: block;
+    text-align: end;
+}
+
+.messages .received-msg .user {
+    font-size: 14px;
+    padding-bottom: 5px;
+    color: yellow;
+}
+
+.text-message {
+    border-radius: 3px 0 0 3px;
+}
+
+.time-message {
+    padding-top: 10px;
+    font-size: 9px;
+    border-radius: 0 3px 3px 0;
+}
+
+.form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.form-group input {
+    width: 90%;
+}
+
+.form-group input::placeholder {
+    color: #00b5b8;
+}
+
+.form-group input::selection {
+    background: #000916;
+    color: #fff;
+} 
+
+.form-group button {
+    width: 10%;
+    cursor: pointer;
+}
